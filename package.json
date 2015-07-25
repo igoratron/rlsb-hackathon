@@ -1,0 +1,23 @@
+{
+  "name": "rlsb-hackathon",
+  "version": "1.0.0",
+  "description": "RLSB hackathon project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoratron/rlsb-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoratron/rlsb-hackathon/issues"
+  },
+  "homepage": "https://github.com/igoratron/rlsb-hackathon#readme",
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  }
+}
