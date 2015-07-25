@@ -1,38 +1,74 @@
 <h1>People Search</h1>
-<form class="form grey">
+<form class="form grey" role="search" ng-submit="people.search(people.formData)">
     <div>
         <label class="label" for="industry">Industry</label>
-        <input type="text" id="industry" name="industry">
+        <input type="text"
+               id="industry"
+               name="industry"
+               ng-model="people.formData.industry"
+            >
     </div>
 
     <div>
         <label class="label" for="job-title">Job Title</label>
-        <input type="text" id="job-title" name="job-title">
+        <input type="text"
+               id="job-title"
+               name="job-title"
+               ng-model="people.formData.jobTitle"
+            >
     </div>
 
     <div>
         <label class="label" for="company">Company</label>
-        <input type="text" id="company" name="company">
+        <input type="text"
+               id="company"
+               name="company"
+               ng-model="people.formData.company"
+            >
     </div>
 
     <div>
         <label class="label" for="location">Location</label>
-        <input type="text" id="location" name="location">
+        <input type="text"
+               id="location"
+               name="location"
+               ng-model="people.formData.location"
+            >
     </div>
 
     <fieldset>
         <legend class="label">Disability</legend>
         <label class="label" for="mobility">Mobility
-            <input type="checkbox" name="disability[]" id="mobility" value="mobility">
+            <input type="checkbox"
+                   name="disability[]"
+                   id="mobility"
+                   value="mobility"
+                   ng-model="people.formData.disability.mobility"
+                >
         </label>
         <label class="label" for="mental">Mental
-            <input type="checkbox" name="disability[]" id="mental" value="mental">
+            <input type="checkbox"
+                   name="disability[]"
+                   id="mental"
+                   value="mental"
+                   ng-model="people.formData.disability.mental"
+                >
         </label>
         <label class="label" for="hearing">Hearing
-            <input type="checkbox" name="disability[]" id="hearing" value="hearing">
+            <input type="checkbox"
+                   name="disability[]"
+                   id="hearing"
+                   value="hearing"
+                   ng-model="people.formData.disability.hearing"
+                >
         </label>
         <label class="label" for="sight">Sight
-            <input type="checkbox" name="disability[]" id="sight" value="sight">
+            <input type="checkbox"
+                   name="disability[]"
+                   id="sight"
+                   value="sight"
+                   ng-model="people.formData.disability.sight"
+                >
         </label>
     </fieldset>
 

@@ -15,7 +15,12 @@ angular
             }).when('/people', {
 
                 controller: 'PeopleController',
+                controllerAs: 'people',
                 templateUrl: './templates/people.html'
+
+            }).when('/people/result', {
+
+                template: '<p>Hello</p>'
 
             }).when('/tips', {
 
@@ -30,7 +35,11 @@ angular
         console.log('Hello world');
     })
     .controller('PeopleController', function () {
-        console.log('Hello world');
+        var vm = this;
+
+        vm.search = function(formData) {
+            console.log(formData);
+        };
     })
     .controller('JobController', function () {
         console.log('Hello world');
