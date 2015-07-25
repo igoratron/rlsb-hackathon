@@ -15,7 +15,7 @@ angular
             }).when('/people', {
 
                 controller: 'PeopleController',
-                template: '<p>PeopleController</p>'
+                templateUrl: './templates/people.html'
 
             }).when('/tips', {
 
