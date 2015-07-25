@@ -1,35 +1,43 @@
 <h1>People Search</h1>
-<form class="form">
-  <div>
-    <label for="industry">Industry</label>
-    <input type="text" id="industry" name="industry">
-  </div>
+<form class="form grey">
+    <div>
+        <label class="label" for="industry">Industry</label>
+        <input type="text" id="industry" name="industry">
+    </div>
 
-  <div>
-    <label for="job-title">Job Title</label>
-    <input type="text" id="job-title" name="job-title">
-  </div>
+    <div>
+        <label class="label" for="job-title">Job Title</label>
+        <input type="text" id="job-title" name="job-title">
+    </div>
 
-  <div>
-    <label for="company">Company</label>
-    <input type="text" id="company" name="company">
-  </div>
+    <div>
+        <label class="label" for="company">Company</label>
+        <input type="text" id="company" name="company">
+    </div>
 
-  <div>
-    <label for="location">Location</label>
-    <input type="text" id="location" name="location">
-  </div>
+    <div>
+        <label class="label" for="location">Location</label>
+        <input type="text" id="location" name="location">
+    </div>
 
-  <fieldset>
-    <legend>Disability</legend>
-    <label for="mobility">Mobility</label>
-    <input type="checkbox" name="disability[]" id="mobility" value="mobility">
-    <label for="mental">Mental</label>
-    <input type="checkbox" name="disability[]" id="mental" value="mental">
-    <label for="hearing">Hearing</label>
-    <input type="checkbox" name="disability[]" id="hearing" value="hearing">
-    <label for="sight">Sight</label>
-    <input type="checkbox" name="disability[]" id="sight" value="sight">
-  </fieldset>
+    <fieldset>
+        <legend class="label">Disability</legend>
+        <label class="label" for="mobility">Mobility
+            <input type="checkbox" name="disability[]" id="mobility" value="mobility">
+        </label>
+        <label class="label" for="mental">Mental
+            <input type="checkbox" name="disability[]" id="mental" value="mental">
+        </label>
+        <label class="label" for="hearing">Hearing
+            <input type="checkbox" name="disability[]" id="hearing" value="hearing">
+        </label>
+        <label class="label" for="sight">Sight
+            <input type="checkbox" name="disability[]" id="sight" value="sight">
+        </label>
+    </fieldset>
+
+    <div class="btn">
+        <button type="submit">Search</button>
+    </div>
 
 </form>
