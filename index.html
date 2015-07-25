@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>RLSB hackathon</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="javascript/app.js"></script>
-  </head>
-  <body ng-app="RLSBApp">
-    <div ng-controller="RLSBController">
-    </div>
-  </body>
+</head>
+<body ng-app="RLSBApp">
+
+
+<ul>
+    <li><a href="#/">Home</a></li>
+    <li><a href="#/job-search">Job Search</a></li>
+    <li><a href="#/people">People</a></li>
+    <li><a href="#/tips">Tips</a></li>
+</ul>
+
+<div data-ng-view></div>
+</body>
 </html>
 
