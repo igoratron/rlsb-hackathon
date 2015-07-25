@@ -1,3 +1,270 @@
-p {
-  color: red;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .company {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header .navigation {
+    width: 100%;
+
+}
+
+.header .navigation ul {
+
+}
+
+.header .navigation ul li {
+    text-align: center;
+    list-style: none;
+    background-color: #000000;
+    width: 33.333333%;
+    float: left;
+    border-left: 1px solid #ffffff;
+}
+
+.header .navigation ul li:first-child {
+    border-left-width: 0;
+}
+
+.header .navigation ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header .navigation ul li:hover {
+    background-color: #c6c6c6;
+}
+
+.header .navigation ul li:hover a {
+    color: #000000;
+}
+
+.main {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.main h1 {
+    text-align: center;
+    margin-bottom:25px;
+}
+
+.grey {
+    background-color: #c6c6c6;
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px 20px 30px;
+    border: none;
+    overflow: hidden;
+}
+
+.form div {
+    clear: both;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    float: left;
+    width: 20%;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.form input[type="text"] {
+    border: none;
+    height: 25px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0 5px 5px;
+    width: 70%;
+}
+
+.form fieldset legend {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form fieldset label {
+    clear: both;
+    cursor: pointer;
+}
+
+.form fieldset input[type="checkbox"] {
+
+}
+
+.label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.form .btn {
+    clear:both;
+    float:right;
+    width:15%;
+}
+
+
+.form .btn button{
+    padding:10px;
+    width:100%;
+    color:#ffffff;
+    background-color: #000000;
+    border-width: 0;
+}
+
+@media (max-width: 500px) {
+
+    .form {
+        padding:10px;
+    }
+    .form label,
+    .form fieldset label,
+    .form input[type="text"],
+    .form fieldset input[type="checkbox"],
+    .form .btn {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+
 }
