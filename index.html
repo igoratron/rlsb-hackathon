@@ -8,17 +8,32 @@
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="javascript/app.js"></script>
 </head>
-<body ng-app="RLSBApp">
+<body data-ng-app="RLSBApp">
+
+<header class="header">
+
+    <div class="company grey">
+
+        <a href="" data-ng-href="#/" title="home">Home</a>
+    </div>
 
 
-<ul>
-    <li><a href="#/">Home</a></li>
-    <li><a href="#/job-search">Job Search</a></li>
-    <li><a href="#/people">People</a></li>
-    <li><a href="#/tips">Tips</a></li>
-</ul>
+    <nav class="navigation">
+        <ul>
+            <li><a href="" data-ng-href="#/job-search" title="job search">Job Search</a></li>
+            <li><a href="" data-ng-href="#/people" title="people">People</a></li>
+            <li><a href="" data-ng-href="#/tips" title="tips">Tips</a></li>
+        </ul>
+    </nav>
 
-<div data-ng-view></div>
+    <div class="clear"></div>
+</header>
+
+<div class="main clear">
+
+    <div data-ng-view></div>
+
+</div>
 </body>
 </html>
 
