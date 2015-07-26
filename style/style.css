@@ -728,18 +728,49 @@ table {
     padding: 30px;
     color: white;
     padding-bottom: 50px;
+    list-style: none;
+    text-align: center;
 }
-table td {
-    width: 26.6%;
+
+@media (min-width: 500px) {
+    .table {
+        display: table;
+    }
+
+    .table-row {
+        display: table-row;
+    }
+
+    .table-cell {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+.tips-comment {
+    border-top: 2px solid black;
+}
+
+.body-text {
+    padding-left: 10px;
+}
+
+.topics_item {
+    display: inline-block;
     font-size: 16px;
     padding: 10px;
 }
-th {
-    font-size: 50px;
-    color: white;
-    padding: 30px;
+
+.topics:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
-table a {
+
+.topics_item a {
     color: #242424;
     text-align: center;
     -o-transition: color 0.5s linear;
@@ -749,11 +780,16 @@ table a {
     -ms-transition: color 0.5s linear;
     transition: color 0.5s linear;
 }
-table a:hover {
+.topics_item a:hover {
     color: white;
 }
+
+#advice h1 {
+    font-size: 50px;
+    color: white;
+    padding: 30px;
+}
 .tips {
-    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
