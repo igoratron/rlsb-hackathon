@@ -5,7 +5,7 @@ angular
             .when('/', {
 
                 controller: 'HomeController',
-                template: '<p>HomeController</p>'
+                templateUrl: './templates/index.html'
 
             }).when('/job-search', {
 
