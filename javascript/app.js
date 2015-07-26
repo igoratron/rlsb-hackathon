@@ -24,7 +24,18 @@ angular
                 controllerAs: 'ctrl',
                 templateUrl: './templates/results.html',
                 resolve: {
-                    results: ['peopleSearch', function(peopleSearch) {
+                    results: ['peopleSearch', function (peopleSearch) {
+                        return peopleSearch.search();
+                    }]
+                }
+
+            }).when('/people/results/:profileId', {
+
+                controller: 'ProfileController',
+                controllerAs: 'profile',
+                templateUrl: './templates/profile.html',
+                resolve: {
+                    results: ['peopleSearch', function (peopleSearch) {
                         return peopleSearch.search();
                     }]
                 }
@@ -36,6 +47,10 @@ angular
 
             });
 
+        $routeProvider.otherwise({
+            redirectTo: '/'
+        });
+
     })
     .controller('HomeController', function () {
         console.log('Hello world');
@@ -43,7 +58,7 @@ angular
     .controller('PeopleController', ['$location', function ($location) {
         var vm = this;
 
-        vm.search = function(formData) {
+        vm.search = function (formData) {
             $location
                 .path('/people/results')
                 .search(formData);
@@ -55,7 +70,15 @@ angular
     .controller('TipsController', function () {
         console.log('Hello world');
     })
-    .controller('ResultsController', ['results', function(results) {
+    .controller('ResultsController', ['results', function (results) {
         var vm = this;
         vm.results = results;
-    }]);
+    }])
+    .controller('ProfileController', function ($routeParams, results) {
+
+        var id = $routeParams['profileId'];
+        var vm = this;
+        vm.result = results[id];
+
+    })
+;
