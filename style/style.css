@@ -782,3 +782,10 @@ table a:hover {
     outline: 3px solid black;
 
 }
+
+
+audio
+{
+    width:100%;
+    margin-bottom:25px;
+}

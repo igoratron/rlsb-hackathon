@@ -1,5 +1,5 @@
 angular
-    .module('RLSBApp', ['ngRoute'])
+    .module('RLSBApp', ['ngRoute', 'ngSanitize'])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {

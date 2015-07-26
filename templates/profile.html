@@ -55,10 +55,42 @@
 
         <div class="main-body">
             <div class="listen-to-bio">
-                <h4><a href="">Listen to Bio</a></h4>
             </div>
             <div class="bio">
-                <h4>{{::profile.result.bio}}</h4>
+
+                <h2>What I do</h2>
+
+                <p>Listen to audio</p>
+                <audio controls="controls">
+
+                    <source src="" data-ng-src="{{::profile.result.whatIDoAudio}}" type="audio/mpeg">
+                </audio>
+
+                <p data-ng-bind-html="::profile.result.whatIDo"></p>
+
+
+                <h2>How disability affects my job and how I deal with it</h2>
+
+                <p>Listen to audio</p>
+                <audio controls="controls">
+
+                    <source src="" data-ng-src="{{::profile.result.howItAffectsMeAudio}}" type="audio/mpeg">
+                </audio>
+
+                <p data-ng-bind-html="::profile.result.howItAffectsMe"></p>
+
+
+                <h2>How I got here</h2>
+
+                <p>Listen to audio</p>
+                <audio controls="controls">
+
+                    <source src="" data-ng-src="{{::profile.result.howIGotHereAudio}}" type="audio/mpeg">
+                </audio>
+
+                <p data-ng-bind-html="::profile.result.howIGotHere"></p>
+
+
             </div>
         </div>
 
