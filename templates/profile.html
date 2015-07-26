@@ -1,0 +1,66 @@
+<div class="profile-wrapper">
+
+    <!--<pre>{"picture":"http://placehold.it/32x32","tenure":65,"name":"Crystal Jensen","company":"COMTENT","email":"undefined.undefined@comtent.org","phone":"(917) 481-2499","jobTitle":"Reconstructive Dentist","disability":"sight","bio":"Magna dolore fugiat sunt laborum."}</pre>-->
+
+    <h1>{{::profile.result.name}}</h1>
+
+    <div>
+        <div class="main-body">
+            <div class="profile-image">
+                <img src="" data-ng-src="{{::profile.result.picture}}" alt="image of {{::profile.result.name}}"/>
+            </div>
+
+            <div class="profile-details">
+
+                <h3>Job Titles: {{::profile.result.jobTitle}}</h3>
+
+                <h3>Company: {{::profile.result.company}}</h3>
+
+                <h3>Years: {{::profile.result.tenure}}</h3>
+
+                <div>
+                    <h4>5 stars</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="profile-contact clear">
+
+        <h1 class="grey">Contact</h1>
+
+        <div class="main-body">
+            <h3>Email: <a href="" data-ng-href="mailto:{{::profile.result.email}}">{{::profile.result.email}}</a></h3>
+
+            <h3>Phone: {{::profile.result.phone}}</h3>
+
+
+            <div class="icons">
+                <ul class="social-icons">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="profile-about clear">
+
+        <h1 class="grey">Bio</h1>
+
+        <div class="main-body">
+            <div class="listen-to-bio">
+                <h4><a href="">Listen to Bio</a></h4>
+            </div>
+            <div class="bio">
+                <h4>{{::profile.result.bio}}</h4>
+            </div>
+        </div>
+
+    </div>
+</div>
