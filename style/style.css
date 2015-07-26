@@ -284,7 +284,7 @@ p {
     position: absolute;
     padding:5px;
     background-color: #000000;
-    color:lightblue;
+    color:#1995ff;
     left: 24px;
     top: 11px;
 }
@@ -297,6 +297,8 @@ p {
 .header .navigation ul {
 
 }
+
+
 
 .header .navigation ul li {
     text-align: center;
@@ -321,7 +323,7 @@ p {
 }
 
 .header .navigation ul li:hover {
-    background-color: #c6c6c6;
+    background-color: #1995ff;
 }
 
 .header .navigation ul li:hover a {
