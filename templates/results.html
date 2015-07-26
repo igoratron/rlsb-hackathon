@@ -11,13 +11,15 @@
 </div>
 <ul class="search-results">
   <li class="search-results_item" ng-repeat="result in ctrl.results">
-    <div>
-      <h2>{{result.name}}</h2>
-      <div>{{result.jobTitle}}, {{result.company}}</div>
-      <div>{{result.bio}}</div>
+    <div class="details-text">
+      <h2 class="details-text_entry">{{result.name}}</h2>
+      <div class="details-text_entry">{{result.jobTitle}}, {{result.company}}</div>
+      <div class="details-text_entry">{{result.bio}}</div>
     </div>
-    <div>
-      Icon
+    <div class="details-icon">
+      <div class="sr-only disability-icon disability-icon--{{::result.disability}}">
+        {{::result.disability}}
+      </div>
     </div>
   </li>
 </ul>

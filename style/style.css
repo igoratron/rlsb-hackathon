@@ -269,16 +269,55 @@ h1 {
 
 }
 
-.search-results_item {
+.search-results {
     display: table;
     table-layout: fixed;
     width: 100%;
 }
 
+.search-results_item {
+    display: table-row;
+}
+
 .search-results_item > div {
     display: table-cell;
+    vertical-align: middle;
 }
 
 .search-results_item:nth-child(2n + 1) {
     background-color: #c6c6c6;
+}
+
+.details-text_entry {
+    margin: 5px;
+}
+
+.details-icon {
+    width: 76px;
+}
+
+.disability-icon {
+    background: url('../images/disability-icons.png') no-repeat;
+    width: 71px;
+    height: 71px;
+}
+
+.disability-icon--sight {
+    background-position: 0 0;
+}
+
+.disability-icon--mobility {
+    background-position: -76px 0;
+}
+
+.disability-icon--mental {
+    background-position: 0 -76px;
+}
+
+.disability-icon--hearing {
+    background-position: -76px -76px;
+}
+
+.sr-only {
+    text-indent: -9999px;
 }
