@@ -789,3 +789,21 @@ audio
     width:100%;
     margin-bottom:25px;
 }
+
+.options {
+
+    display: table;
+    margin:25px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.options .search-options {
+    list-style: none;
+    display: table-row;
+}
+.options .search-options li {
+
+    display: table-cell;
+
+}
