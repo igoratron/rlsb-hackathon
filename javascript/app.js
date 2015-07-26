@@ -1,5 +1,12 @@
 angular
     .module('RLSBApp', ['ngRoute', 'ngSanitize'])
+    .run(['$rootScope', function($rootScope) {
+        $rootScope.$on('$viewContentLoaded', function() {
+            var el = document.querySelector('.js-view h1');
+            el.tabIndex = -1;
+            el.focus();
+        });
+    }])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -58,7 +65,7 @@ angular
     .controller('HomeController', function () {
         console.log('Hello world');
     })
-    .controller('PeopleController', ['$location', function ($location) {
+    .controller('PeopleController', ['$location', '$scope', function ($location, $scope) {
         var vm = this;
 
         vm.search = function (formData) {
