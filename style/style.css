@@ -598,6 +598,7 @@ p {
 #about {
     background-color: #1995ff;
 }
+
 #about h1 {
     color: white;
     text-align: center;
@@ -632,8 +633,25 @@ table td {
 th {
     font-size: 50px;
 }
-.titles td {
-    font-size: 30px;
+
+.titles {
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .titles {
+        display: table;
+        table-layout: fixed;
+    }
+
+    .titles > div {
+        display: table-cell;
+        padding: 0 10px;
+    }
+}
+
+#about2 h1 {
+    font-size: 50px;
 }
 #about2 {
     padding-bottom: 30px;
