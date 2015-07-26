@@ -42,8 +42,11 @@ angular
 
             }).when('/tips', {
 
-                controller: 'TipsController',
-                template: '<p>TipsController</p>'
+                templateUrl: './templates/tips.html'
+
+            }).when('/tips/interview', {
+
+                templateUrl: './templates/interview.html'
 
             });
 
