@@ -38,38 +38,46 @@
 
     <fieldset>
         <legend class="label">Disability</legend>
-        <label class="label" for="mobility">Mobility
+
+        <div class="disability-checkbox">
             <input type="checkbox"
                    name="disability[]"
                    id="mobility"
                    value="mobility"
                    ng-model="people.formData.disability.mobility"
                 >
-        </label>
-        <label class="label" for="mental">Mental
+            <label class="label disability-icon disability-icon--mobility sr-only" for="mobility">Mobility</label>
+        </div>
+
+        <div class="disability-checkbox">
             <input type="checkbox"
                    name="disability[]"
                    id="mental"
                    value="mental"
                    ng-model="people.formData.disability.mental"
                 >
-        </label>
-        <label class="label" for="hearing">Hearing
+            <label class="label disability-icon disability-icon--mental sr-only" for="mental">Mental</label>
+        </div>
+
+        <div class="disability-checkbox">
             <input type="checkbox"
                    name="disability[]"
                    id="hearing"
                    value="hearing"
                    ng-model="people.formData.disability.hearing"
                 >
-        </label>
-        <label class="label" for="sight">Sight
+            <label class="label disability-icon disability-icon--hearing sr-only" for="hearing">Hearing</label>
+        </div>
+
+        <div class="disability-checkbox">
             <input type="checkbox"
                    name="disability[]"
                    id="sight"
                    value="sight"
                    ng-model="people.formData.disability.sight"
                 >
-        </label>
+            <label class="label disability-icon disability-icon--sight sr-only" for="sight">Sight</label>
+        </div>
     </fieldset>
 
     <div class="btn">

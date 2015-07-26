@@ -480,6 +480,7 @@ p {
 .sr-only {
     text-indent: -9999px;
 }
+
 .profile-wrapper {
 
     width: 100%;
@@ -638,7 +639,6 @@ th {
     padding-bottom: 30px;
 }
 
-
 #tips table {
     width: 80%;
     margin-left: 10%;
@@ -756,3 +756,29 @@ table a:hover {
 }
 
 
+.disability-checkbox {
+    position:relative;
+    display: inline-block;
+}
+
+.disability-checkbox input[type=checkbox] {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.disability-checkbox input[type=checkbox] + label {
+    width: 76px;
+    position: relative;
+    z-index: 1;
+    -webkit-filter: brightness(0.4);
+}
+
+.disability-checkbox input[type=checkbox]:checked + label {
+    -webkit-filter: none;
+}
+
+.disability-checkbox input[type=checkbox]:focus + label {
+    outline: 3px solid black;
+
+}
