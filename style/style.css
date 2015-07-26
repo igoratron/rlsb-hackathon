@@ -261,6 +261,32 @@ p {
 .header .company {
     padding: 10px;
     border-bottom: 1px solid #ffffff;
+    height:75px;
+    
+}
+
+.header .company .logo {
+
+    width:200px;
+    margin: auto;
+    position: relative;
+}
+
+.header .company img {
+    width:50px;
+    height:auto;
+    position: absolute;
+}
+
+.header .company h1 {
+
+    font-size: 20px;
+    position: absolute;
+    padding:5px;
+    background-color: #000000;
+    color:lightblue;
+    left: 24px;
+    top: 11px;
 }
 
 .header .navigation {
