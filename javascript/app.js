@@ -18,32 +18,44 @@ angular
                 controllerAs: 'people',
                 templateUrl: './templates/people.html'
 
-            }).when('/people/result', {
+            }).when('/people/results', {
 
-                template: '<p>Hello</p>'
+                controller: 'ResultsController',
+                controllerAs: 'ctrl',
+                templateUrl: './templates/results.html',
+                resolve: {
+                    results: ['peopleSearch', function(peopleSearch) {
+                        return peopleSearch.search();
+                    }]
+                }
 
             }).when('/tips', {
 
                 controller: 'TipsController',
                 template: '<p>TipsController</p>'
 
-            })
-
+            });
 
     })
     .controller('HomeController', function () {
         console.log('Hello world');
     })
-    .controller('PeopleController', function () {
+    .controller('PeopleController', ['$location', function ($location) {
         var vm = this;
 
         vm.search = function(formData) {
-            console.log(formData);
+            $location
+                .path('/people/results')
+                .search(formData);
         };
-    })
+    }])
     .controller('JobController', function () {
         console.log('Hello world');
     })
     .controller('TipsController', function () {
         console.log('Hello world');
-    });
+    })
+    .controller('ResultsController', ['results', function(results) {
+        var vm = this;
+        vm.results = results;
+    }]);

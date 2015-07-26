@@ -268,3 +268,17 @@ h1 {
     }
 
 }
+
+.search-results_item {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.search-results_item > div {
+    display: table-cell;
+}
+
+.search-results_item:nth-child(2n + 1) {
+    background-color: #c6c6c6;
+}

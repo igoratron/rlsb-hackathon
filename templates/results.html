@@ -1,0 +1,23 @@
+<h1>Search Results</h1>
+<div>
+  <p>You searched for:</p>
+  <ul>
+    <li>Industry</li>
+    <li>Job title</li>
+    <li>Company</li>
+    <li>Location</li>
+    <li>Disability</li>
+  </ul>
+</div>
+<ul class="search-results">
+  <li class="search-results_item" ng-repeat="result in ctrl.results">
+    <div>
+      <h2>{{result.name}}</h2>
+      <div>{{result.jobTitle}}, {{result.company}}</div>
+      <div>{{result.bio}}</div>
+    </div>
+    <div>
+      Icon
+    </div>
+  </li>
+</ul>
