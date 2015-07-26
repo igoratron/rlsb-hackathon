@@ -1,29 +1,32 @@
 <h1>Search Results</h1>
 <div>
-  <p>You searched for:</p>
-  <ul>
-    <li>Industry</li>
-    <li>Job title</li>
-    <li>Company</li>
-    <li>Location</li>
-    <li>Disability</li>
-  </ul>
-</div>
-<ul class="search-results">
-  <li class="search-results_item" ng-repeat="result in ctrl.results">
-    <div class="details-text">
-      <h2 class="details-text_entry">{{result.name}}</h2>
-      <div class="details-text_entry">{{result.title}}, {{result.company}}</div>
-      <div class="details-text_entry">{{result.bio}}</div>
-    </div>
-    <div class="details-icon">
-      <div class="sr-only disability-icon disability-icon--{{::result.disability}}">
-        {{::result.disability}}
-      </div>
+    <p class="center">You searched for:</p>
+
+    <div class="options">
+        <ul class="search-options">
+            <li>Job title: Web Developer</li>
+            <li>Location: London</li>
+            <li>Disability: hearing, sight</li>
+        </ul>
     </div>
 
-      <div class="link clear">
-          <a href="" data-ng-href="#/people/results/{{$index}}">View profile</a>
-      </div>
-  </li>
+</div>
+<ul class="search-results">
+    <li class="search-results_item" ng-repeat="result in ctrl.results">
+        <div class="details-text">
+            <h2 class="details-text_entry">{{result.name}}</h2>
+
+            <div class="details-text_entry">{{result.title}}, {{result.company}}</div>
+            <div class="details-text_entry">{{result.bio}}</div>
+        </div>
+        <div class="details-icon">
+            <div class="sr-only disability-icon disability-icon--{{::result.disability | lowercase}}">
+                {{::result.disability}}
+            </div>
+        </div>
+
+        <div class="link clear">
+            <a href="" data-ng-href="#/people/results/{{$index}}">View profile</a>
+        </div>
+    </li>
 </ul>
